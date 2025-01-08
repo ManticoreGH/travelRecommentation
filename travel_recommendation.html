@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FramAir</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Recommendations</title>
 </head>
 <body>
-<script src="travel_recommendation.js"></script>
+    <div class="navbar">
+        <div class="navbar-items">
+            <div id="company"><i class="fa fa-plane" id = "logo-icon"></i> Recommendations</div>
+        </div>
+        <div class="navbar-items">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="navbar-items">
+            <label for="searchDestination">Your Destination: </label>
+            <input type="text" placeholder="Search destinations..." id="searchDestination">
+            <button class="btn" id="btnSearch">Search</button>
+            <button class="btn" id="btnReset">Reset</button>
+        </div>
+    </div>
+    <div id="home">
+        <div class="social-media">
+            <div class="vertical-line">
+            </div>
+            <div class="social-media-item">
+                <i class="fa fa-twitter fa-2x social-media-btn"></i>
+                <i class="fa fa-facebook fa-2x social-media-btn"></i>
+                <i class="fa fa-instagram fa-2x social-media-btn"></i>
+                <i class="fa fa-youtube fa-2x social-media-btn"></i>
+            </div>
+        </div>
+        <div class="information">
+            <div class="information-title">
+                    Explore<br>
+                    Dream<br>
+                    Destination<br>
+            </div>
+            <div class="information-body">
+                <p>
+                    It encourages exploration of unfamiliar<br> territories, embracing diverse cultures and<br>
+                    landscapes, while pursuing the desired<br> destination that captivates the heart and<br>
+                    ignites a sense of wonder.
+                </p>
+            </div>
+        </div>
+        <div id="result"></div>
+        <div id="about"></div>
+        <div id="contact"></div>
+    </div>
+    <script src="./travel_recommendation.js"></script>
 </body>
 </html>

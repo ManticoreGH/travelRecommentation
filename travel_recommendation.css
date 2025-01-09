@@ -1,40 +1,51 @@
 body, html {
     font-family: Arial, sans-serif;
+    background-image: url('./img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: auto;
     margin: 0;
     padding: 0;
     height: 100%;
 }
+
+.center
+{
+    text-align: center;
+}
+
 .navbar {
+    display: flex;
+    flex-direction: row;
     background-color: black;
     color: white;
-    overflow: hidden;
-    display: flex;
-    height: auto;
-    width: auto;
-    justify-content: space-between ;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
 }
+
 .navbar a {
     color: white;
     margin: 30px;
-    text-align: center;
     text-decoration: none;
 }
 
 .navbar-items {
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
 }
 
 #company {
+    float: left;
     font-size: 30px;
     font-style: italic;
     font-weight: bold;
-    display: flex;
     vertical-align: center;
 }
 
 .search-container {
-    float: left;
+    float: right;
     padding: 14px 16px;
 }
 
@@ -46,7 +57,6 @@ body, html {
 }
 
 .btn {
-    display: flex;
     color: lightseagreen;
     margin: 5px;
     border-radius: 5px;
@@ -54,21 +64,28 @@ body, html {
     background-color: white;
 }
 
+
 .btn:hover {
     background-color: lightseagreen;
     color: white;
     cursor: pointer;
 }
 
+#btnBook {
+    color: white;
+    background-color: lightseagreen;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 #home {
     display: flex;
     height: 100%;
     width: 100%;
-    background-image: url('./img/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    flex-direction: row;
 }
 
 .social-media {
@@ -104,60 +121,80 @@ body, html {
 }
 
 .information {
-    float: left;
-    display: flex;
-    flex-direction: column;
-    overflow: visible;
-    width: 600px;
-    height: 500px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    height: fit-content;
     margin-top: 25px;
-    margin-left: 30px;
+    margin-left: 25px;
     background-color: rgba(50, 50, 50, 0.5);
-    border-radius: 20px;
     color: white;
+    border-radius: 20px;
 }
 
 .information-title {
-    float: left;
-    display: block;
     font-size: 50px;
     font-weight: bold;
     margin: 20px;
 }
 
 .information-body{
-    float: left;
-    display: block;
     font-size: 20px;
+    text-align: justify;
     font-weight: normal;
-    margin:20px;
+    margin:10px;
 }
 
-#result{
-    margin-top: 25px;
-    margin-left: 25px;
-}
-
-#result div {
-    width: 400px;
-    margin-bottom: 25px;
-    color: black;
-    background-color: white;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-}
-
-#result div img {
-    border-radius: 20px;
-}
-
-#result div button {
+#btnBook{
     color: white;
     background-color: lightseagreen;
     border: none;
     border-radius: 5px;
     padding: 10px;
-    margin: 10px;
-    width: 200px;
+    margin: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#result{
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 450px;
+    height: 100px;
+}
+
+#result img {
+    width: 450px;
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+}
+
+#result h2 {
+    margin: 20px;
+}
+
+#result p {
+    margin: 20px;
+    color: rgb(158, 147, 147);
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.btnVisit {
+    margin: 10px 20px;
+    background-color: lightseagreen;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    font-size: medium;
+}
+
+.search-result {
+    margin-bottom: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.invisible {
+    display: none;
 }
